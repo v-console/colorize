@@ -1,7 +1,6 @@
 module colorize
 
 import regex
-import log
 
 struct AnsiColorCode {
 	text       string
@@ -104,9 +103,7 @@ fn (c Colorize) color(s string) string {
 			continue
 		}
 
-		color_code := c.colors[color_key] or {
-			continue
-		}
+		color_code := c.colors[color_key] or { continue }
 		if m.starts_with('<!') {
 			result = result.replace(m, color_code.background)
 		} else {
