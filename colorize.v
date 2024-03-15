@@ -13,7 +13,6 @@ interface Colorizer {
 }
 
 struct Colorize {
-mut:
 	colors map[string]AnsiColorCode
 	reset  string
 }
