@@ -19,7 +19,16 @@ struct Colorize {
 
 fn new() Colorizer {
 	color_codes := {
+		// default colors
+		'default':      AnsiColorCode{
+			text: '\x1b[39m'
+			background: '\x1b[49m'
+		}
 		// Text colors
+		'black':        AnsiColorCode{
+			text: '\x1b[30m'
+			background: '\x1b[40m'
+		}
 		'red':          AnsiColorCode{
 			text: '\x1b[31m'
 			background: '\x1b[41m'
@@ -47,10 +56,6 @@ fn new() Colorizer {
 		'white':        AnsiColorCode{
 			text: '\x1b[37m'
 			background: '\x1b[47m'
-		}
-		'black':        AnsiColorCode{
-			text: '\x1b[30m'
-			background: '\x1b[40m'
 		}
 		'dark_gray':    AnsiColorCode{
 			text: '\x1b[90m'
