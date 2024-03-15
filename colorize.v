@@ -20,57 +20,93 @@ struct Colorize {
 fn new() Colorizer {
 	color_codes := {
 		// Text colors
-		'red':        AnsiColorCode{
+		'red':          AnsiColorCode{
 			text: '\x1b[31m'
 			background: '\x1b[41m'
 		}
-		'green':      AnsiColorCode{
+		'green':        AnsiColorCode{
 			text: '\x1b[32m'
 			background: '\x1b[42m'
 		}
-		'yellow':     AnsiColorCode{
+		'yellow':       AnsiColorCode{
 			text: '\x1b[33m'
 			background: '\x1b[43m'
 		}
-		'blue':       AnsiColorCode{
+		'blue':         AnsiColorCode{
 			text: '\x1b[34m'
 			background: '\x1b[44m'
 		}
-		'purple':     AnsiColorCode{
+		'purple':       AnsiColorCode{
 			text: '\x1b[35m'
 			background: '\x1b[45m'
 		}
-		'cyan':       AnsiColorCode{
+		'cyan':         AnsiColorCode{
 			text: '\x1b[36m'
 			background: '\x1b[46m'
 		}
-		'white':      AnsiColorCode{
+		'white':        AnsiColorCode{
 			text: '\x1b[37m'
 			background: '\x1b[47m'
 		}
+		'black':        AnsiColorCode{
+			text: '\x1b[30m'
+			background: '\x1b[40m'
+		}
+		'dark_gray':    AnsiColorCode{
+			text: '\x1b[90m'
+			background: '\x1b[100m'
+		}
+		'light_red':    AnsiColorCode{
+			text: '\x1b[91m'
+			background: '\x1b[101m'
+		}
+		'light_green':  AnsiColorCode{
+			text: '\x1b[92m'
+			background: '\x1b[102m'
+		}
+		'light_yellow': AnsiColorCode{
+			text: '\x1b[93m'
+			background: '\x1b[103m'
+		}
+		'light_blue':   AnsiColorCode{
+			text: '\x1b[94m'
+			background: '\x1b[104m'
+		}
+		'light_purple': AnsiColorCode{
+			text: '\x1b[95m'
+			background: '\x1b[105m'
+		}
+		'light_cyan':   AnsiColorCode{
+			text: '\x1b[96m'
+			background: '\x1b[106m'
+		}
+		'light_white':  AnsiColorCode{
+			text: '\x1b[97m'
+			background: '\x1b[107m'
+		}
 		// styles bold, dim, italic, underline, blink_slow, blink_fast, inverse, hidden
-		'bold':       AnsiColorCode{
+		'bold':         AnsiColorCode{
 			text: '\x1b[1m'
 		}
-		'dim':        AnsiColorCode{
+		'dim':          AnsiColorCode{
 			text: '\x1b[2m'
 		}
-		'italic':     AnsiColorCode{
+		'italic':       AnsiColorCode{
 			text: '\x1b[3m'
 		}
-		'underline':  AnsiColorCode{
+		'underline':    AnsiColorCode{
 			text: '\x1b[4m'
 		}
-		'blink_slow': AnsiColorCode{
+		'blink_slow':   AnsiColorCode{
 			text: '\x1b[5m'
 		}
-		'blink_fast': AnsiColorCode{
+		'blink_fast':   AnsiColorCode{
 			text: '\x1b[6m'
 		}
-		'inverse':    AnsiColorCode{
+		'inverse':      AnsiColorCode{
 			text: '\x1b[7m'
 		}
-		'hidden':     AnsiColorCode{
+		'hidden':       AnsiColorCode{
 			text: '\x1b[8m'
 		}
 	}
